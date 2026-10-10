@@ -8,7 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({ message: 'API de usuarios funcionando' });
+  res.json({
+    message: 'API de Carlos actualizada con GitHub Actions'
+  });
 });
 
 app.get('/health', (req, res) => {
